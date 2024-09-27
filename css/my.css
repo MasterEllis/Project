@@ -23,8 +23,39 @@ header{
   border-bottom-right-radius: 100px;
   margin-bottom: 80px;
 } 
-
-header .container{
+ /* меню */
+ nav{
+  position:fixed;
+  top:0;
+  z-index: 20;
+  width: 100%;
+  background:rgba(3,29,51, 0.65);
+  user-select: none;
+ }
+ .navigation{
+  display: flex;
+  justify-content: center;
+  column-gap:20px;
+  padding:15px 0;
+ }
+ .navigation a{
+  color:#FFF;
+  font-size: 18px;
+text-transform: uppercase;
+transition: 0.5s;
+ }
+ /* .navigation:hover a:hover{
+  color:#1782CF;
+ } */
+/* размытие меню */
+.navigation:hover a{
+  filter:blur(15px);
+}
+.navigation:hover a:hover{
+  color:aqua;
+  filter:blur(0px);
+ } 
+header .container{ 
 
   position: relative;
   z-index: 7;
